@@ -2,6 +2,6 @@ buildPack: maven
 pipelineConfig:
   pipelines:
     release:
-      postBuild:
+      promote:
         steps:
-        - command: "updatebot --kind helm conference-agenda \$(cat VERSION)"
+        - command: updatebot push-version --kind helm conference-agenda \$(cat VERSION)
