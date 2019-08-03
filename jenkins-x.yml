@@ -4,4 +4,4 @@ pipelineConfig:
     release:
       postBuild:
         steps:
-        - command: ' sh ''./updatebot.sh'''
+        - command: "updatebot --kind helm conference-agenda \$(cat VERSION)"
