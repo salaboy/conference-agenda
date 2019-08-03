@@ -18,8 +18,8 @@ public class DemoApplication {
     private String version;
 
     @GetMapping
-    public String helloVersion() {
-        return "Hello human, my version is: " + version;
+    public String helloAgendaWithVersion() {
+        return "AGENDA v" + version;
     }
 
 }
